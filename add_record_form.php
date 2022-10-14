@@ -37,7 +37,10 @@ include('includes/header.php');
             <label>Image:</label>
             <input type="file" name="image" accept="image/*" />
             <br>
-            
+
+            <label>Schedule upload:</label>
+            <input type="input" name="Schedule upload">
+            <br>
             <label>&nbsp;</label>
             <input type="submit" value="Add Record">
             <br>
