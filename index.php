@@ -67,8 +67,8 @@ include('includes/header.php');
 <th>Name</th>
 <th>Breed</th>
 <th>Food preference</th>
-<th>Food preference</th>
 <th>Allergies</th>
+<th>Special Instructions</th>
 <th>Duration </th>
 <th>Delete</th>
 <th>Edit</th>
