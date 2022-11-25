@@ -65,7 +65,7 @@ include('includes/header.php');
 <tr>
 <th>Image</th>
 <th>Name</th>
-<th>Price</th>
+<th>Breed</th>
 <th>Delete</th>
 <th>Edit</th>
 </tr>
