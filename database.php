@@ -1,5 +1,5 @@
 <?php
-    $dsn = 'mysql:host=localhost;dbname=estherca2';
+    $dsn = 'mysql:host=localhost;dbname=ca2';
     $username = 'root';
     $password = '';
 
