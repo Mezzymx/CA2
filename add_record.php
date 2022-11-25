@@ -71,8 +71,8 @@ if ($category_id == null || $category_id == false ||
     $statement->bindValue(':name', $name);
     $statement->bindValue(':breed', $breed);
     $statement->bindValue(':image', $image);
-    $statement->bindValue(':Food preference', $Food preference);
-    
+    $statement->bindValue(':Food preference', $Food);
+
 
     $statement->execute();
     $statement->closeCursor();
