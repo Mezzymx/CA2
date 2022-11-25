@@ -30,7 +30,7 @@ include('includes/header.php');
             <input type="input" name="name">
             <br>
 
-            <label>List Price:</label>
+            <label>Breed:</label>
             <input type="input" name="price">
             <br>        
             
@@ -38,7 +38,7 @@ include('includes/header.php');
             <input type="file" name="image" accept="image/*" />
             <br>
 
-            <label>Schedule upload:</label>
+            <label>Duration of stay:</label>
             <input type="input" name="Schedule upload">
             <br>
             <label>&nbsp;</label>
