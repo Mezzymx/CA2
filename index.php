@@ -45,7 +45,7 @@ include('includes/header.php');
 <h1>Pet Paradise Hotel</h1>
 <aside>
 <!-- display a list of categories -->
-<h2>Categories</h2>
+<h2> Animal Categories</h2>
 <nav>
 <ul>
 <?php foreach ($categories as $category) : ?>
