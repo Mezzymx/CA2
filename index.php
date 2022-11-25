@@ -68,10 +68,10 @@ include('includes/header.php');
 <th>Breed</th>
 <th>Delete</th>
 <th>Edit</th>
+<th>Duration </th>
 <th>Food preference</th>
 <th>Allergies</th>
 <th>Special Instructions</th>
-<th>Duration </th>
 </tr>
 <?php foreach ($records as $record) : ?>
 <tr>
