@@ -33,9 +33,9 @@ include('includes/header.php');
                    value="<?php echo $records['name']; ?>">
             <br>
 
-            <label>List Price:</label>
-            <input type="input" name="price"
-                   value="<?php echo $records['price']; ?>">
+            <label>Breed:</label>
+            <input type="input" name="breed"
+                   value="<?php echo $records['breed']; ?>">
             <br>
 
             <label>Image:</label>
