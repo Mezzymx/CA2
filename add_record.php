@@ -63,15 +63,14 @@ if ($category_id == null || $category_id == false ||
 
     // Add the product to the database 
     $query = "INSERT INTO records
-                 (categoryID, name, breed, image)
+                 (categoryID, name, price, image)
               VALUES
-                 (:category_id, :name, :breed, :image)";
+                 (:category_id, :name, :price, :image)";
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':name', $name);
-    $statement->bindValue(':breed', $breed);
+    $statement->bindValue(':price', $price);
     $statement->bindValue(':image', $image);
-    
     $statement->execute();
     $statement->closeCursor();
 
