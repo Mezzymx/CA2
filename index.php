@@ -66,12 +66,12 @@ include('includes/header.php');
 <th>Image</th>
 <th>Name</th>
 <th>Breed</th>
+<th>Delete</th>
+<th>Edit</th>
 <th>Food preference</th>
 <th>Allergies</th>
 <th>Special Instructions</th>
 <th>Duration </th>
-<th>Delete</th>
-<th>Edit</th>
 </tr>
 <?php foreach ($records as $record) : ?>
 <tr>
