@@ -80,8 +80,8 @@ include('includes/header.php');
 <td><?php echo $record['name']; ?></td>
 <td><?php echo $record['Breed']; ?></td>
 <td><?php echo $record['Duration']; ?></td>
+<td><?php echo $record['Food preference']; ?></td>
 <td><?php echo $record['Allergies']; ?></td>
-<td><?php echo $record['Special Instructions']; ?></td>
 <td class="right"><?php echo $record['Special Instructions']; ?></td>
 <td><form action="delete_record.php" method="post"
 id="delete_record_form">
