@@ -35,7 +35,7 @@ include('includes/header.php');
 
             <label>Breed:</label>
             <input type="input" name="breed"
-                   value="<?php echo $records['breed']; ?>">
+                   value="<?php echo $records['Breed']; ?>">
             <br>
 
             <label>Image:</label>
