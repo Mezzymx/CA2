@@ -35,11 +35,31 @@ include('includes/header.php');
 
             <label>Breed:</label>
             <input type="input" name="breed"
-                   value="<?php echo $records['Breed']; ?>">
+                   value="<?php echo $records['breed']; ?>">
+            <br>
+
+            <label>Duration of stay:</label>
+            <input type="input" name="duration"
+                   value="<?php echo $records['duration']; ?>">
+            <br>
+
+            <label>Food:</label>
+            <input type="input" name="food"
+                   value="<?php echo $records['food']; ?>">
+            <br>
+
+            <label>Allergies:</label>
+            <input type="input" name="allergies"
+                   value="<?php echo $records['allergies']; ?>">
+            <br>
+
+            <label>Instructions:</label>
+            <input type="input" name="instructions"
+                   value="<?php echo $records['instructions']; ?>">
             <br>
 
             <label>Image:</label>
-            <input type="file" name="image" accept="image/*" />
+            <input type="file" name="image" accept="image" />
             <br>            
             <?php if ($records['image'] != "") { ?>
             <p><img src="image_uploads/<?php echo $records['image']; ?>" height="150" /></p>

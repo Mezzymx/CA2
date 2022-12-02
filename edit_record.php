@@ -1,15 +1,20 @@
 <?php
 
 // Get the record data
+
 $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $name = filter_input(INPUT_POST, 'name');
-$price = filter_input(INPUT_POST, 'price', FILTER_VALIDATE_FLOAT);
+$breed = filter_input(INPUT_POST, 'breed');
+$duration = filter_input(INPUT_POST, 'duration');
+$food = filter_input(INPUT_POST, 'food');
+$allergies = filter_input(INPUT_POST, 'allergies');
+$instructions = filter_input(INPUT_POST, 'instructions');
+
 
 // Validate inputs
 if ($record_id == NULL || $record_id == FALSE || $category_id == NULL ||
-$category_id == FALSE || empty($name) ||
-$price == NULL || $price == FALSE) {
+$category_id == FALSE || empty($name) ) {
 $error = "Invalid record data. Check all fields and try again.";
 include('error.php');
 } else {
@@ -51,19 +56,29 @@ require_once('database.php');
 $query = 'UPDATE records
 SET categoryID = :category_id,
 name = :name,
-price = :price,
-image = :image
+breed = :breed,
+duration = :duration,
+food = :food,
+allergies = :allergies,
+instructions = :instructions,
+image = :image,
+
 WHERE recordID = :record_id';
+
 $statement = $db->prepare($query);
 $statement->bindValue(':category_id', $category_id);
 $statement->bindValue(':name', $name);
-$statement->bindValue(':price', $price);
+$statement->bindValue(':breed', $breed);
+$statement->bindValue(':duration', $duration);
+$statement->bindValue(':food', $food);
+$statement->bindValue(':allergies', $allergies);
+$statement->bindValue(':instructions', $instructions);
 $statement->bindValue(':image', $image);
 $statement->bindValue(':record_id', $record_id);
 $statement->execute();
 $statement->closeCursor();
 
 // Display the Product List page
-include('index.php');
+include('index.php'); 
 }
 ?>

@@ -31,16 +31,29 @@ include('includes/header.php');
             <br>
 
             <label>Breed:</label>
-            <input type="input" name="price">
+            <input type="input" name="breed">
             <br>        
+
+            <label>Duration of stay:</label>
+            <input type="input" name="duration">
+            <br>
+
+            <label>Food Preference</label>
+            <input type="input" name="food">
+            <br>
+
+            <label>Allergies</label>
+            <input type="input" name="allergies">
+            <br>
+
+            <label>Special Instructions</label>
+            <input type="input" name="instructions">
+            <br>
             
             <label>Image:</label>
             <input type="file" name="image" accept="image/*" />
             <br>
 
-            <label>Duration of stay:</label>
-            <input type="input" name="Schedule upload">
-            <br>
             <label>&nbsp;</label>
             <input type="submit" value="Add Record">
             <br>

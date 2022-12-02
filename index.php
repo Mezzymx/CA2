@@ -42,7 +42,7 @@ $statement3->closeCursor();
 <?php
 include('includes/header.php');
 ?>
-<h1>Pet Paradise Hotel</h1>
+
 <aside>
 <!-- display a list of categories -->
 <h2> Pet Categories</h2>
@@ -78,11 +78,11 @@ include('includes/header.php');
 <tr>
 <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
 <td><?php echo $record['name']; ?></td>
-<td><?php echo $record['Breed']; ?></td>
-<td><?php echo $record['Duration']; ?></td>
-<td><?php echo $record['Food preference']; ?></td>
-<td><?php echo $record['Allergies']; ?></td>
-<td class="right"><?php echo $record['Special Instructions']; ?></td>
+<td><?php echo $record['breed']; ?></td>
+<td><?php echo $record['duration']; ?></td>
+<td><?php echo $record['food']; ?></td>
+<td><?php echo $record['allergies']; ?></td>
+<td class="right"><?php echo $record['instructions']; ?></td>
 <td><form action="delete_record.php" method="post"
 id="delete_record_form">
 <input type="hidden" name="record_id"
