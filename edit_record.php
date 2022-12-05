@@ -61,7 +61,7 @@ duration = :duration,
 food = :food,
 allergies = :allergies,
 instructions = :instructions,
-image = :image,
+image = :image
 
 WHERE recordID = :record_id';
 
