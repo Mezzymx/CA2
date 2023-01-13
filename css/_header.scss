@@ -7,12 +7,14 @@ background-color:$tacha ;
 header {
     margin: 0;
     border-bottom: 2px solid black;
+     h1 {
+        font-size: 30px;
+        margin: 0;
+        padding: .5em 0;
+        color: rgb(56, 92, 22);
+    }
 }
-header h1 {
-    margin: 0;
-    padding: .5em 0;
-    color: black;
-}
+
 
 nav ul {
     list-style-type: none;
