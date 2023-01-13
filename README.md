@@ -7,4 +7,4 @@ A starter project for DkIT students on the Server-Side module.
 * Configure the database.php file to connect to your SQL database
 # Pet Paradise Hotel
 
-*image_uploads\template.png
+*![Getting Started](image_uploads\template.png)
