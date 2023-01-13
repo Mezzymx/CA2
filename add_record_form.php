@@ -50,11 +50,11 @@ include('includes/header.php');
             <br>
 
             <label>Allergies</label> 
-            <input type="input" name="allergies" required>
+            <input type="input" name="allergies" placeholder="Add all allergies/ irritabilities" required>
             <br>
 
             <label>Special Instructions</label>
-            <input type="input" name="instructions">
+            <input type="input" name="instructions" placeholder="Add special requirements">
             <br>
             
             <label>Image:</label>
