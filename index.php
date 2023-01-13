@@ -56,13 +56,15 @@ include('includes/header.php');
 <?php endforeach; ?>
 </ul>
 </nav>          
+
 </aside>
 
 <section>
+
 <!-- display a table of records -->
 <h2><?php echo $category_name; ?></h2>
-<table>
-<tr>
+<div class="table">
+<table class="table table-striped "><tr>
 <th>Image</th>
 <th>Name</th>
 <th>Breed</th>
@@ -91,7 +93,7 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input type="submit" value="Delete">
+<input type="submit" value="Delete" class="btn btn-danger">
 </form></td>
 <td><form action="edit_record_form.php" method="post"
 id="delete_record_form">
@@ -99,11 +101,12 @@ id="delete_record_form">
 value="<?php echo $record['recordID']; ?>">
 <input type="hidden" name="category_id"
 value="<?php echo $record['categoryID']; ?>">
-<input type="submit" value="Edit">
+<input type="submit" value="Edit" class="btn btn-success">
 </form></td>
 </tr>
 <?php endforeach; ?>
 </table>
+</div>
 </section>
 <?php
 include('includes/footer.php');

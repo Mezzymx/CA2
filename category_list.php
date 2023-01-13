@@ -13,6 +13,7 @@
 <div class="container">
 <?php
 include('includes/header.php');
+
 ?>
     <h1>Category List</h1>
     <table>
