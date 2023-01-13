@@ -27,23 +27,30 @@ include('includes/header.php');
             </select>
             <br>
             <label>Name:</label>
-            <input type="input" name="name">
+            <input type="input" name="name" required>
             <br>
 
             <label>Breed:</label>
-            <input type="input" name="breed">
+            <input type="input" name="breed" required>
             <br>        
 
-            <label>Duration of stay:</label>
-            <input type="input" name="duration">
+            <label>Arrival:</label>
+            <input type="date" name="arrival" required
+                   value="<?php echo $records['arrival']; ?>">
             <br>
+
+            <label>Departure:</label>
+            <input type="date" name="departure" required
+                   value="<?php echo $records['departure']; ?>">
+            <br>
+
 
             <label>Food Preference</label>
             <input type="input" name="food">
             <br>
 
-            <label>Allergies</label>
-            <input type="input" name="allergies">
+            <label>Allergies</label> 
+            <input type="input" name="allergies" required>
             <br>
 
             <label>Special Instructions</label>

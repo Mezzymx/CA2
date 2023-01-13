@@ -66,7 +66,8 @@ include('includes/header.php');
 <th>Image</th>
 <th>Name</th>
 <th>Breed</th>
-<th>Duration </th>
+<th>Arrival </th>
+<th>Departure </th>
 <th>Food preference</th>
 <th>Allergies</th>
 <th>Special Instructions</th>
@@ -79,7 +80,8 @@ include('includes/header.php');
 <td><img src="image_uploads/<?php echo $record['image']; ?>" width="100px" height="100px" /></td>
 <td><?php echo $record['name']; ?></td>
 <td><?php echo $record['breed']; ?></td>
-<td><?php echo $record['duration']; ?></td>
+<td><?php echo $record['arrival']; ?></td>
+<td><?php echo $record['departure']; ?></td>
 <td><?php echo $record['food']; ?></td>
 <td><?php echo $record['allergies']; ?></td>
 <td class="right"><?php echo $record['instructions']; ?></td>

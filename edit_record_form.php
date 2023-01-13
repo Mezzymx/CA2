@@ -38,9 +38,12 @@ include('includes/header.php');
                    value="<?php echo $records['breed']; ?>">
             <br>
 
-            <label>Duration of stay:</label>
-            <input type="input" name="duration"
-                   value="<?php echo $records['duration']; ?>">
+            <label>Arrival:</label>
+            <input type="date" name="arrival">
+            <br>
+
+            <label>Departure:</label>
+            <input type="date" name="departure">
             <br>
 
             <label>Food:</label>

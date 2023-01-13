@@ -6,7 +6,8 @@ $record_id = filter_input(INPUT_POST, 'record_id', FILTER_VALIDATE_INT);
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $name = filter_input(INPUT_POST, 'name');
 $breed = filter_input(INPUT_POST, 'breed');
-$duration = filter_input(INPUT_POST, 'duration');
+$arrival = filter_input(INPUT_POST, 'arrival');
+$departure = filter_input(INPUT_POST, 'departure');
 $food = filter_input(INPUT_POST, 'food');
 $allergies = filter_input(INPUT_POST, 'allergies');
 $instructions = filter_input(INPUT_POST, 'instructions');
@@ -57,7 +58,8 @@ $query = 'UPDATE records
 SET categoryID = :category_id,
 name = :name,
 breed = :breed,
-duration = :duration,
+arrival = :arrival,
+departure = :departure,
 food = :food,
 allergies = :allergies,
 instructions = :instructions,
@@ -69,7 +71,8 @@ $statement = $db->prepare($query);
 $statement->bindValue(':category_id', $category_id);
 $statement->bindValue(':name', $name);
 $statement->bindValue(':breed', $breed);
-$statement->bindValue(':duration', $duration);
+$statement->bindValue(':arrival', $arrival);
+$statement->bindValue(':departure', $departure);
 $statement->bindValue(':food', $food);
 $statement->bindValue(':allergies', $allergies);
 $statement->bindValue(':instructions', $instructions);
