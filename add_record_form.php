@@ -27,7 +27,7 @@ include('includes/header.php');
             </select>
             <br>
             <label>Name:</label>
-            <input type="input" name="name" required>
+            <input type="input" name="name" placeholder="Add pet name" required>
             <br>
 
             <label>Breed:</label>
