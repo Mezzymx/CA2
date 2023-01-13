@@ -45,15 +45,15 @@ include('includes/header.php');
             <br>
 
 
-            <label>Food Preference</label>
+            <label>Food Preference:</label>
             <input type="input" name="food">
             <br>
 
-            <label>Allergies</label> 
+            <label>Allergies:</label> 
             <input type="input" name="allergies" placeholder="Add all allergies/ irritabilities" required>
             <br>
 
-            <label>Special Instructions</label>
+            <label>Special Instructions:</label>
             <input type="input" name="instructions" placeholder="Add special requirements">
             <br>
             

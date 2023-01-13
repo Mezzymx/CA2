@@ -4,7 +4,8 @@
 $category_id = filter_input(INPUT_POST, 'category_id', FILTER_VALIDATE_INT);
 $name = filter_input(INPUT_POST, 'name');
 $breed = filter_input(INPUT_POST, 'breed');
-$duration = filter_input(INPUT_POST, 'duration');
+$arrival = filter_input(INPUT_POST, 'arrival');
+$departure = filter_input(INPUT_POST, 'departure');
 $food = filter_input(INPUT_POST, 'food');
 $instructions = filter_input(INPUT_POST, 'instructions');
 $allergies = filter_input(INPUT_POST, 'allergies');
@@ -69,15 +70,16 @@ if ($category_id == null || $category_id == false ||
 
     // Add the product to the database 
     $query = "INSERT INTO records
-                 (categoryID, name, breed, image, duration, food, instructions)
+                 (categoryID, name, breed, image, arrival, departure, food, instructions)
               VALUES
-                 (:category_id, :name, :breed, :image, :duration, :food, :instructions)";
+                 (:category_id, :name, :breed, :image, :arrival, :departure, :food, :instructions)";
     $statement = $db->prepare($query);
     $statement->bindValue(':category_id', $category_id);
     $statement->bindValue(':name', $name);
     $statement->bindValue(':breed', $breed);
     $statement->bindValue(':image', $image);
-    $statement->bindValue(':duration', $duration);
+    $statement->bindValue(':arrival', $arrival);
+    $statement->bindValue(':departure', $departure);
     $statement->bindValue(':food', $food);
     $statement->bindValue(':instructions', $instructions);
     $statement->execute();
